@@ -1,12 +1,28 @@
 
-import java.io.File;
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.Scanner;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
+/*** Java.Util
+Contains the collections framework, legacy collection classes, event model, 
+date and time facilities, internationalization, and miscellaneous 
+utility classes (a string tokenizer, a random-number generator, and a bit array).
+*/ 
+import java.util.Scanner; // A simple text scanner which can parse primitive types and strings using regular expressions.
+import java.util.ArrayList; // This class provides a skeletal implementation of the List interface to minimize 
+                            //the effort required to implement this interface backed by a "random access" data store (such as an array).
+
+import java.util.InputMismatchException; //Constructs an InputMismatchException with null as its error message string.
+
+/***
+Provides for system input and output through data streams, 
+serialization and the file system.
+ */
+import java.io.IOException; //  Signals that an I/O exception of some sort has occurred.
+import java.io.FileNotFoundException; // Signals that an attempt to open the file denoted by a specified pathname has failed.
+
+import java.io.File; // An abstract representation of file and directory pathnames.
+import java.io.FileWriter; // Convenience class for writing character files.
+import java.io.PrintWriter; // Prints formatted representations of objects to a text-output stream.
+
+
+
 
 public class Main {
 
