@@ -101,8 +101,10 @@ public class Main {
                         amountToDeposit = userSession.nextDouble();
                     }catch(InputMismatchException e){
                         System.out.println("Invalid Input");
+                        userSession.next(); // discard the invalid token
+                        continue; 
                     }
-                    if(amountToDeposit < 0){
+                    if(amountToDeposit <= 0){
                         System.out.println("Amount must be positive!!!");
                     }else{
                         currentCustomerBalance += amountToDeposit;
@@ -117,8 +119,10 @@ public class Main {
                         amountToWithdraw= userSession.nextDouble();
                     }catch(InputMismatchException e){
                         System.out.println("Invalid Input");
+                        userSession.next(); // discard the invalid token
+                        continue; 
                     }
-                    if(amountToWithdraw < 0){
+                    if(amountToWithdraw <= 0){
                         System.out.println("Amount must be positive!!!");
                     }else if (amountToWithdraw > currentCustomerBalance){
                         System.out.println("You do not have enough funds!");
